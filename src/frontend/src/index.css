@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Light theme - White background with blue/red accents */
+        --background: 1 0 0; /* Pure white */
+        --foreground: 0.2 0 0; /* Near black for text */
+        
+        --card: 1 0 0;
+        --card-foreground: 0.2 0 0;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0 0;
+        
+        /* Primary: Professional Blue */
+        --primary: 0.45 0.15 250; /* Rich blue */
+        --primary-foreground: 0.98 0 0;
+        
+        /* Secondary: Light gray */
+        --secondary: 0.96 0 0;
+        --secondary-foreground: 0.2 0 0;
+        
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.5 0 0;
+        
+        --accent: 0.96 0 0;
+        --accent-foreground: 0.2 0 0;
+        
+        /* Destructive: Professional Red */
+        --destructive: 0.55 0.22 25; /* Academic red */
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.9 0 0;
+        --input: 0.9 0 0;
+        --ring: 0.45 0.15 250;
+        
+        --chart-1: 0.45 0.15 250;
+        --chart-2: 0.55 0.22 25;
+        --chart-3: 0.6 0.15 150;
+        --chart-4: 0.65 0.18 50;
+        --chart-5: 0.5 0.12 200;
+    }
+
+    .dark {
+        --background: 0.15 0 0;
+        --foreground: 0.98 0 0;
+        
+        --card: 0.2 0 0;
+        --card-foreground: 0.98 0 0;
+        
+        --popover: 0.2 0 0;
+        --popover-foreground: 0.98 0 0;
+        
+        --primary: 0.6 0.18 250;
+        --primary-foreground: 0.98 0 0;
+        
+        --secondary: 0.25 0 0;
+        --secondary-foreground: 0.98 0 0;
+        
+        --muted: 0.25 0 0;
+        --muted-foreground: 0.65 0 0;
+        
+        --accent: 0.3 0 0;
+        --accent-foreground: 0.98 0 0;
+        
+        --destructive: 0.6 0.22 25;
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.3 0 0;
+        --input: 0.3 0 0;
+        --ring: 0.6 0.18 250;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Ensure focus states are visible */
+    *:focus-visible {
+        @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    }
+    
+    /* Smooth transitions for interactive elements */
+    a, button {
+        @apply transition-colors duration-200;
+    }
+}
+
+@layer components {
+    /* Custom scrollbar for better aesthetics */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-track {
+        @apply bg-muted;
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-muted-foreground/30 rounded-full;
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        @apply bg-muted-foreground/50;
+    }
+}

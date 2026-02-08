@@ -1,0 +1,22 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for Home, About, Courses, and Contact pages, wrapped in QueryClientProvider for React Query state management.",
+  "frontend/src/components/SiteLayout.tsx": "Root layout component that provides the common structure (header, main content area with Outlet, footer, and sticky WhatsApp button) for all pages.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive header component with the new Science Squad logo image, navigation links, mobile menu using Sheet component, and active route highlighting; logo uses responsive max-width constraints and object-contain for proper display across all breakpoints.",
+  "frontend/src/components/SiteFooter.tsx": "Site-wide footer with the Science Squad logo, quick links, contact details, and premium social media buttons for Facebook and Instagram with lift-and-glow hover effects; includes attribution with caffeine.ai link.",
+  "frontend/src/components/StickyWhatsAppButton.tsx": "Fixed-position WhatsApp button that remains visible while scrolling, styled with WhatsApp green color and hover animation.",
+  "frontend/src/components/MarketingSection.tsx": "Reusable section wrapper component that provides consistent spacing and container layout for marketing page sections.",
+  "frontend/src/components/FeatureCard.tsx": "Card component for displaying features with icon, title, and description, includes hover effects and consistent styling.",
+  "frontend/src/components/CourseSection.tsx": "Reusable course display component with title, overview, benefits list, and three CTA buttons (Enroll/Call/WhatsApp).",
+  "frontend/src/components/ContactForm.tsx": "Contact form with validation, loading states, success/error handling, and integration with backend submitInquiry mutation.",
+  "frontend/src/components/GoogleMapEmbed.tsx": "Lazy-loaded Google Maps iframe component that defers rendering until visible in viewport for performance optimization.",
+  "frontend/src/pages/HomePage.tsx": "Home page with hero section, three CTAs, Why Choose cards, Courses overview, and admissions banner with fixed call button styling using destructive variant for proper color contrast; includes SEO meta tags.",
+  "frontend/src/pages/AboutPage.tsx": "About page featuring Mission, Vision, Teaching Methodology sections, and trust-building content for parents; includes SEO meta tags.",
+  "frontend/src/pages/CoursesPage.tsx": "Courses page with detailed sections for Board Classes and all five competitive exams (IIT-JEE, NEET, WBJEE, JELET, JENPAS); includes SEO meta tags.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with address, phone/email details, contact form, and embedded Google Map; includes SEO meta tags.",
+  "frontend/src/hooks/useSubmitInquiry.ts": "React Query mutation hook for submitting contact form inquiries to the backend actor.",
+  "frontend/src/lib/contactLinks.ts": "Utility functions for generating consistent tel:, WhatsApp, and mailto links across the application.",
+  "frontend/src/lib/seo.ts": "Utility function for dynamically setting page title and meta description for SEO optimization.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining light theme with professional blue primary and red destructive colors, plus focus states and transitions.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, enhanced shadows, and consistent border radius values.",
+  "frontend/index.html": "HTML entry point with SEO meta description, Inter font preload, and proper semantic structure."
+}
